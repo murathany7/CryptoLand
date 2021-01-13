@@ -24,7 +24,7 @@ class App extends Component {
 
     // Load DaiToken
     const daiTokenData = DaiToken.networks[networkId]
-    if(daiTokenData) {
+    if (daiTokenData) {
       const daiToken = new web3.eth.Contract(DaiToken.abi, daiTokenData.address)
       this.setState({ daiToken })
       let daiTokenBalance = await daiToken.methods.balanceOf(this.state.account).call()
@@ -35,7 +35,7 @@ class App extends Component {
 
     // Load DappToken
     const dappTokenData = DappToken.networks[networkId]
-    if(dappTokenData) {
+    if (dappTokenData) {
       const dappToken = new web3.eth.Contract(DappToken.abi, dappTokenData.address)
       this.setState({ dappToken })
       let dappTokenBalance = await dappToken.methods.balanceOf(this.state.account).call()
@@ -46,7 +46,7 @@ class App extends Component {
 
     // Load TokenFarm
     const tokenFarmData = TokenFarm.networks[networkId]
-    if(tokenFarmData) {
+    if (tokenFarmData) {
       const tokenFarm = new web3.eth.Contract(TokenFarm.abi, tokenFarmData.address)
       this.setState({ tokenFarm })
       let stakingBalance = await tokenFarm.methods.stakingBalance(this.state.account).call()
@@ -103,7 +103,7 @@ class App extends Component {
 
   render() {
     let content
-    if(this.state.loading) {
+    if (this.state.loading) {
       content = <p id="loader" className="text-center">Loading...</p>
     } else {
       content = <Main
@@ -118,6 +118,14 @@ class App extends Component {
     return (
       <div>
         <Navbar account={this.state.account} />
+        <div class="card text-center" style={{ width: '18rem' }}>
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
         <div className="container-fluid mt-5">
           <div className="row">
             <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '600px' }}>
