@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cryptoland-staging-205302-authRole",
+      "UnauthRoleArn": "arn:aws:iam::350340468075:role/amplify-cryptoland-staging-205302-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::350340468075:role/amplify-cryptoland-staging-205302-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cryptoland-staging-205302-deployment",
+      "UnauthRoleName": "amplify-cryptoland-staging-205302-unauthRole",
+      "StackName": "amplify-cryptoland-staging-205302",
+      "StackId": "arn:aws:cloudformation:us-east-1:350340468075:stack/amplify-cryptoland-staging-205302/53fd3dc0-55e1-11eb-96ed-1246411399d1",
+      "AmplifyAppId": "d1ez40lax4lck8"
+    }
+  }
+}
