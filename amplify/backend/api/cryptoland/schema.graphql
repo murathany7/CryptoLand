@@ -1,0 +1,8 @@
+type listings @model {
+  id: ID!
+  name: String!
+  location: String
+  description: String
+  price: Int
+  image:String
+}

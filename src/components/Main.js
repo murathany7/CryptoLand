@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import dai from '../dai.png'
+import Card from './Card';
 
 class Main extends Component {
 
   render() {
     return (
       <div id="content" className="mt-3">
-
+        <Card />
         <table className="table table-borderless text-muted text-center">
           <thead>
             <tr>

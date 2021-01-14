@@ -10,6 +10,11 @@
       "StackName": "amplify-cryptoland-staging-205302",
       "StackId": "arn:aws:cloudformation:us-east-1:350340468075:stack/amplify-cryptoland-staging-205302/53fd3dc0-55e1-11eb-96ed-1246411399d1",
       "AmplifyAppId": "d1ez40lax4lck8"
+    },
+    "categories": {
+      "auth": {
+        "cryptoland6ef69a0f": {}
+      }
     }
   }
 }
