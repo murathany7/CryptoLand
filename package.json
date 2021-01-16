@@ -1,8 +1,8 @@
 {
-  "name": "defi-tutorial",
+  "name": "cryptoland",
   "version": "0.1.0",
-  "description": "DeFi Token Staking App",
-  "author": "gregory@dappuniversity.com",
+  "description": "CryptoLand app",
+  
   "dependencies": {
     "@aws-amplify/ui-react": "^0.2.34",
     "aws-amplify": "^3.3.14",
