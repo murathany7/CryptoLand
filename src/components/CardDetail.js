@@ -1,22 +1,16 @@
-import { API, Storage } from 'aws-amplify';
-import React, { useState, useEffect } from 'react';
-import { listListingss,getListings } from '../graphql/queries';
+
+import React from 'react';
+import PaymentSc from './PaymentSc';
+
 export default function CardDetail(props) {
-  const [info, setapidataa] = useState({});
-  useEffect(() => {
-    fetchData();
-  },[])
-  async function fetchData() {
-    const apiData = await API.graphql({ query: getListings,variables:{id:props.match.params.id}});
-    console.log(apiData);
-    setapidataa(apiData.data.getListings);
-    
-  }
- 
-  
+
   return (
-    <div>
-      <h1>{info.description}</h1>
+    <div style={{textAlign: 'center'}} >
+      <h1 style={{textAlign:'center',marginTop:45,fontFamily:'Yusei Magic',color:'blueviolet'}}  >{props.location.state.id.name}</h1>
+
+      <img  src={props.location.state.id.image} />
+      <h3 style={{fontFamily:'Yusei Magic',marginTop:25}}>{props.location.state.id.description}</h3 >
+      <PaymentSc price={props.location.state.id.price} />
     </div>
   )
 }
